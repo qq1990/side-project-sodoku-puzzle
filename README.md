@@ -1,1 +1,1 @@
-# side-projects-sodoku-puzzle
+# side-project-sodoku-puzzle
