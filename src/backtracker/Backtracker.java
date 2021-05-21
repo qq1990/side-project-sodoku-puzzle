@@ -2,11 +2,8 @@ package backtracker;
 
 import java.util.Optional;
 /**
- * This class represents the classic recursive backtracking algorithm.
- * It has a solver that can take a valid configuration and return a
- * solution, if one exists.
  *
- * @author RIT CS
+ * @author Quan Quy
  */
 public class Backtracker {
     /** Should debug output be enabled */
@@ -15,11 +12,7 @@ public class Backtracker {
     /** number of configs generated */
     private long numConfigs;
 
-    /**
-     * Initialize a new tentsandtrees.backtracker.
-     *
-     * @param debug Is debugging output enabled?
-     */
+
     public Backtracker(boolean debug) {
         this.debug = debug;
         this.numConfigs = 0;
@@ -28,24 +21,14 @@ public class Backtracker {
         }
     }
 
-    /**
-     * A utility routine for printing out various debug messages.
-     *
-     * @param msg The type of config being looked at (current, goal,
-     *  successor, e.g.)
-     * @param config The config to display
-     */
+
     private void debugPrint(String msg, Configuration config) {
         if (this.debug) {
             System.out.println(msg + ":\n" + config);
         }
     }
 
-    /**
-     * Return the number of configs generated using solve()
-     *
-     * @return number of configs
-     */
+
     public long getNumConfigs() {
         return this.numConfigs;
     }
